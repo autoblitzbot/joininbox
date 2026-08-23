@@ -37,6 +37,8 @@ EOF
   two_months_ago="$(date -d '2 months ago' '+%Y-%m-%d %H:%M:%S')"
 
   sudo tee "$JM_HOME/.joinmarket/logs/yigen-statement.csv" >/dev/null <<EOF
+timestamp,cj amount/satoshi,my input count,my input value/satoshi,cjfee/satoshi,earned/satoshi,confirm time/min,notes
+$now,,,,,,,Connected
 $now,100000,1,50000,10,100,1,new
 $two_days_ago,100000,1,50000,10,200,1,week
 $ten_days_ago,100000,1,50000,10,300,1,month
